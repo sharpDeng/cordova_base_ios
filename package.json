@@ -1,0 +1,17 @@
+{
+  "name": "ymyImprove",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "ymyImprove",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "ISC"
+}
