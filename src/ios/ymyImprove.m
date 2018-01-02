@@ -7,7 +7,7 @@
   // Member variables go here.
 }
 
-- (void)pluginInitialize；
+- (void)pluginInitialize;
 @end
 
 @implementation ymyImprove
