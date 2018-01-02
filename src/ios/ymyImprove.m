@@ -7,13 +7,18 @@
   // Member variables go here.
 }
 
-- (void)pluginInitialize；
+- (void)pluginInitialize;
 @end
 
 @implementation ymyImprove
 
 - (void)pluginInitialize
 {
+    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(initImprove) userInfo:nil repeats:NO];
+    
+}
+
+- (void)initImprove{
     MainViewController *vc = [self getCurrentMainViewController];
     vc.webView.scrollView.bounces = NO;
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:nil];
@@ -25,7 +30,7 @@
 - (MainViewController *)getCurrentMainViewController
 {
     UIViewController *result = nil;
-    UIWindow *window = [[UIApplication sharedApplication]keyWindow];
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
     if(window.windowLevel != UIWindowLevelNormal)
     {
         NSArray *windows = [[UIApplication sharedApplication] windows];
